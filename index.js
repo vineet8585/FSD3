@@ -158,12 +158,47 @@
 // console.log("three");
 // console.log("four");
 
-function sumofsqrt(a,b)
-{
-    return Math.sqrt(a)+Math.sqrt(b);
-}
+// function sumofsqrt(a,b)
+// {
+//     return Math.sqrt(a)+Math.sqrt(b);
+// }
 
-function myname(){
-    return "Vineet Sharma"
+// function myname(){
+//     return "Vineet Sharma"
+// }
+// console.log(myname()+" "+ sumofsqrt(4,9));
+
+const myPromise=new Promise((resolve,reject)=>{
+    let username="vinee@12";
+    let password="123456";
+    if(username=="vinee@12" && password=="123456"){
+        resolve("success");
+    }
+    else{
+        reject("invalid user")
+    }
+})
+
+// myPromise.then((msg)=>{
+//     console.log(msg);
+// })
+// .catch((error)=> {
+//     console.log(error);
+// })
+// .finally(()=>{
+//     console.log("all resources are closed");
+// }
+// )
+
+async function loginHandler(){
+    try{
+         const loginStatus=myPromise;
+         console.log(loginStatus)
+    }catch(e){
+        console.log(e)
+    }
+    finally{
+        console.log("closing all the open resources..")
+    }
 }
-console.log(myname()+" "+ sumofsqrt(4,9));
+loginHandler();
