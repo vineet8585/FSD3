@@ -1,42 +1,67 @@
-import './App.css'
-import profileImg from './img/scene.jpg'
+import car from './img/scene1.jpg'
 
 function App() {
   const student = {
     name: "Vineet Sharma",
     course: "B.Tech CSE",
     college: "ABES Engineering College",
-    rollNo: "2500320109021",
+    rollNo: "250032010021",
     year: "3rd Year",
     section: "CSE-13"
   }
 
   return (
-    <div className="id-card">
-      
-      <div className="card-header">
+    <div
+      style={{
+        width: "350px",
+        margin: "50px auto",
+        border: "2px solid black",
+        textAlign: "center"
+      }}
+    >
+
+      <div
+        style={{
+          backgroundColor: "red",
+          padding: "10px"
+        }}
+      >
         <h2>ABES Engineering College</h2>
         <p>Student Identity Card</p>
       </div>
 
-      <div className="card-body">
+      <div
+        style={{
+          padding: "20px"
+        }}
+      >
+
         <img
-          src={profileImg}
+          src={car}
           alt="Student"
-          className="profile-img"
+          style={{
+            width: "120px",
+            height: "120px"
+          }}
         />
 
-        <h2>{student.name}</h2>
+       
+        <h2
+          style={{
+            backgroundColor: "brown"
+          }}
+        >
+          {student.name}
+        </h2>
 
-        <p><strong>Course:</strong> {student.course}</p>
-        <p><strong>Roll No:</strong> {student.rollNo}</p>
-        <p><strong>Year:</strong> {student.year}</p>
-        <p><strong>Section:</strong> {student.section}</p>
+        <p><b>Course:</b> {student.course}</p>
+        <p><b>Roll No:</b> {student.rollNo}</p>
+        <p><b>Year:</b> {student.year}</p>
+        <p><b>Section:</b> {student.section}</p>
+
       </div>
 
-      <div className="card-footer">
-        <p>{student.college}</p>
-      </div>
+      <p>{student.college}</p>
 
     </div>
   )
