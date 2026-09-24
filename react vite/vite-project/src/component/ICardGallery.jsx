@@ -11,13 +11,13 @@ function ICardGallery() {
       img: car
     },
     {
-      name: "Rahul",
+      name: "Ram",
       age: 21,
       college: "IIT Delhi",
       img: car
     },
     {
-      name: "Aman",
+      name: "Raj",
       age: 20,
       college: "AKTU",
       img: car
@@ -25,7 +25,7 @@ function ICardGallery() {
   ];
 
   return (
-    <div>
+    <div style={{display:'flex'}}>
       {student.map((data) => (
         <Icard {...data} />
       ))}

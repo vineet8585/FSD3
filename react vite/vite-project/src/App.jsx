@@ -1,15 +1,7 @@
-import car from './img/scene1.jpg'
-import ICardGallery from "./component/ICardGallery";
+// import car from './img/scene1.jpg'
 
-function App() {
-  return (
-    <div>
-      <ICardGallery />
-    </div>
-  );
-}
 
-export default App;
+
 // function App() {
   
 //   const student = {
@@ -79,3 +71,26 @@ export default App;
 // }
 
 // export default App
+
+
+
+// import ICardGallery from "./component/ICardGallery";
+
+
+
+import ImdbGallery from "./component/ImdbGallery";
+
+
+
+
+function App() {
+  return (
+    <div>
+      <ImdbGallery/>
+
+      {/* <ICardGallery /> */}
+    </div>
+  );
+}
+
+export default App;
